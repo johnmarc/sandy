@@ -1,58 +1,128 @@
 <html>
-<head>
-<title>
+    <head>
+        <meta charset='UTF-8'>
+        <title>
 Charts and Graphs for Sandy NYC
-</title>
-</head>
-<body>
-<address>
+        </title>
+        <link rel='stylesheet' href='css/style.css'>
+        <style>
+    .tabs {
+      position: relative;   
+      min-height: 4000px; /* This part sucks */
+      clear: both;
+      margin: 25px 0;
+    }
+    .tab {
+      float: left;
+    }
+    .tab label {
+      background: #eee; 
+      padding: 10px; 
+      border: 1px solid #ccc; 
+      margin-left: -1px; 
+      position: relative;
+      left: 1px; 
+    }
+    .tab [type=radio] {
+      display: none;   
+    }
+    .content {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      background: white;
+      right: 0;
+      bottom: 0;
+      padding: 20px;
+      border: 1px solid #ccc; 
+    }
+    [type=radio]:checked ~ label {
+      background: white;
+      border-bottom: 1px solid white;
+      z-index: 2;
+    }
+    [type=radio]:checked ~ label ~ .content {
+      z-index: 1;
+    }
+    </style>
+    </head>
+    <body>
+<div id="page-wrap">
+<div class="tabs">
+    <div class="tab">
+        <input type="radio" id="tab-1" name="tab-group-1" checked>
+        <label for="tab-1">Current Conditions</label>
+        <div class="content">
+        <address>
 Update Time: 
-<script language="javascript">
-stamp = new Date();
-document.write(stamp.toDateString() + "-" + stamp.toTimeString());
-//document.write((stamp.getMonth() + 1) + '/' + stamp.getDate() + '/' + stamp.getYear() + " - " + stamp.getHours() + ":" + stamp.getMinutes() + ":" + stamp.getSeconds());
-</script>
-</address> 
-<h3> Current Storm Surge </h3>
-If there is a red x over 10' <b>big trouble</b><br />
-<img src="http://www.nws.noaa.gov/mdl/etsurge/data/nybat.gif"><br />
-<h3> Current Wind and Barometric Pressure</h3>
-Look for the pressure to drop below 29" while the storm is over us<br />
-<a href="http://www.bradleyloritheo.com/weather/weather.html">
-<img border=0 src="http://www.bradleyloritheo.com/weather/autoscalewindbaro.gif"></a><br />
-<h3> 48hr Wind/Temp Forecast </h3>
-<img src="http://forecast.weather.gov/wtf/meteograms/Plotter.php?lat=40.68301&lon=-73.98006&wfo=OKX&zcode=NYZ075&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=110010000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1&dd=0&bw=0&hrspan=48&pqpfhr=6&psnwhr=6">
-<h3> Links </h3>
-<ul>
-<li><a href="https://twitter.com/melanarchy">My Twitter Account</a> Tweet me with suggestions for additions</li>
-<li><a href="http://apps.coned.com/stormcenter_external/default.html">Coned Outages</a></li>
-<li><a href="http://www.bradleyloritheo.com/weather/weather.html">Live Park Slope weather from Bradley Loritheo</a></li>
-<li><a href="http://google.org/crisismap/sandy-2012">Google's Hurricane Sandy Crisis Map</a></li>
-<li><a href="http://hint.fm/wind/">Beautiful Wind Map from hint.fm</a> note the whole east coast being sucked toward sandy</a></li>
-<li><a href="http://www.ssd.noaa.gov/goes/east/eaus/flash-wv.html">NOAA Satellite Loop</a></li>
-</ul>
-<h3> Twitter Updates </h3>
-<blockquote class="twitter-tweet"><p>this graphic really conveys a sense of alarm. kudos. <a href="http://t.co/yUHBnqEe" title="http://twitter.com/jezebeldodai/status/262761087684993025/photo/1">twitter.com/jezebeldodai/s…</a></p>&mdash; jezebel dodai (@jezebeldodai) <a href="https://twitter.com/jezebeldodai/status/262761087684993025" data-datetime="2012-10-29T03:41:40+00:00">October 29, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script language="javascript">
+            stamp = new Date();
+            document.write(stamp.toDateString() + "-" + stamp.toTimeString());
+        </script>
+        </address> 
+            <h3> Current Storm Surge </h3>
+            If there is a red x over 10' <b>big trouble</b><br />
+            <img src="http://www.nws.noaa.gov/mdl/etsurge/data/nybat.gif"><br />
+            <h3> Current Wind and Barometric Pressure</h3>
+            Look for the pressure to drop below 29" while the storm is over us<br />
+            <a href="http://www.bradleyloritheo.com/weather/weather.html">
+            <img border=0 src="http://www.bradleyloritheo.com/weather/autoscalewindbaro.gif"></a><br />
+            <h3> 48hr Wind/Temp Forecast </h3>
+            <img src="http://forecast.weather.gov/wtf/meteograms/Plotter.php?lat=40.68301&lon=-73.98006&wfo=OKX&zcode=NYZ075&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=110010000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1&dd=0&bw=0&hrspan=48&pqpfhr=6&psnwhr=6">
 
-<blockquote class="twitter-tweet"><p>Lower Manhattan during Hurricane Donna in 1960. <a href="https://twitter.com/search/%23sandy">#sandy</a> <a href="https://twitter.com/search/%23frankenstorm">#frankenstorm</a> <a href="http://t.co/8cePUV4W" title="http://twitter.com/LucyKafanov/status/262760871397310464/photo/1">twitter.com/LucyKafanov/st…</a></p>&mdash; Lucy Kafanov (@LucyKafanov) <a href="https://twitter.com/LucyKafanov/status/262760871397310464" data-datetime="2012-10-29T03:40:48+00:00">October 29, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <meta http-equiv="refresh" content="120">
+            <hr>
+            <address>
+            This page refreshes itself every 120 seconds. Some content lovingly borrowed from other sites. No copyright. Redistribute as you see fit. All data entered 28-30 OCT 2012 by john marc.
+            </address>
+            <address>
+            Mirrors and pull requests encouraged git@github.com:johnmarc/sandy.git
+            </address>
+        </div>
+    </div>
 
-<blockquote class="twitter-tweet"><p>We put a camera up on 51st floor of NYT building to watch storm <a href="http://t.co/cXm8icOX" title="http://nyti.ms/XHC9UL">nyti.ms/XHC9UL</a> (Crossing fingers keeps updating, tech gods willing)</p>&mdash; NYT Graphics (@nytgraphics) <a href="https://twitter.com/nytgraphics/status/262748256386306048" data-datetime="2012-10-29T02:50:40+00:00">October 29, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet"><p>The Gowanus is beginning to flood on second street. It's about fifteen feet up the block now <a href="http://t.co/yCXnvaaw" title="http://twitter.com/hunterw/status/262719817235177473/photo/1">twitter.com/hunterw/status…</a></p>&mdash; Hunter Walker (@hunterw) <a href="https://twitter.com/hunterw/status/262719817235177473" data-datetime="2012-10-29T00:57:40+00:00">October 29, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="tab">
+        <input type="radio" id="tab-2" name="tab-group-1">
+        <label for="tab-2">Links</label>
+        <div class="content">
+            <h3> Links </h3>
+            <ul>
+            <li><a href="https://twitter.com/melanarchy">My Twitter Account</a> Tweet me with suggestions for additions</li>
+            <li><a href="http://apps.coned.com/stormcenter_external/default.html">Coned Outages</a></li>
+            <li><a href="http://www.bradleyloritheo.com/weather/weather.html">Live Park Slope weather from Bradley Loritheo</a></li>
+            <li><a href="http://google.org/crisismap/sandy-2012">Google's Hurricane Sandy Crisis Map</a></li>
+            <li><a href="http://hint.fm/wind/">Beautiful Wind Map from hint.fm</a> note the whole east coast being sucked toward sandy</a></li>
+            <li><a href="http://www.ssd.noaa.gov/goes/east/eaus/flash-wv.html">NOAA Satellite Loop</a></li>
+            <li><a href="http://gis.nyc.gov/oem/he/map.htm?lon=-73.99499584343718&lat=40.678699545556704">NYC Evacuation Zone Map</a></li>
+            </ul>
+        </div>
+    </div>
 
-<blockquote class="twitter-tweet"><p>Wow. All these MTA Photos of abandoned NYC transportation hubs are great. <a href="http://t.co/8fOcHO2h" title="http://www.flickr.com/photos/mtaphotos/">flickr.com/photos/mtaphot…</a></p>&mdash; Joseph Weisenthal (@TheStalwart) <a href="https://twitter.com/TheStalwart/status/262742220963196928" data-datetime="2012-10-29T02:26:41+00:00">October 29, 2012</a></blockquote>
+    <div class="tab">
+        <input type="radio" id="tab-3" name="tab-group-1">
+        <label for="tab-3">Tweets</label>
+        <div class="content">
+            <h3> Twitter Updates </h3>
+            <blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/startingptcnn">startingptcnn</a> Thank you for your amazing coverage Soledad! Here we are marooned in Red Hook, Brooklyn!! <a href="https://twitter.com/search/%23Sandy">#Sandy</a> <a href="http://t.co/VAHFiLXX" title="http://twitter.com/greenpainting/status/262894932648402944/photo/1">twitter.com/greenpainting/…</a></p>&mdash; Nick Cope (@greenpainting) <a href="https://twitter.com/greenpainting/status/262894932648402944" data-datetime="2012-10-29T12:33:31+00:00">October 29, 2012</a></blockquote>
+            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<meta http-equiv="refresh" content="120">
-<hr>
-<address>
-This page refreshes itself every 120 seconds. Some content lovingly borrowed from other sites. No copyright. Redistribute as you see fit. All data entered 28-30 OCT 2012 by john marc.
-</address>
-<address>
-Mirrors and pull requests encouraged git@github.com:johnmarc/sandy.git
-</address>
+            <blockquote class="twitter-tweet"><p>this graphic really conveys a sense of alarm. kudos. <a href="http://t.co/yUHBnqEe" title="http://twitter.com/jezebeldodai/status/262761087684993025/photo/1">twitter.com/jezebeldodai/s…</a></p>&mdash; jezebel dodai (@jezebeldodai) <a href="https://twitter.com/jezebeldodai/status/262761087684993025" data-datetime="2012-10-29T03:41:40+00:00">October 29, 2012</a></blockquote>
+            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <blockquote class="twitter-tweet"><p>Lower Manhattan during Hurricane Donna in 1960. <a href="https://twitter.com/search/%23sandy">#sandy</a> <a href="https://twitter.com/search/%23frankenstorm">#frankenstorm</a> <a href="http://t.co/8cePUV4W" title="http://twitter.com/LucyKafanov/status/262760871397310464/photo/1">twitter.com/LucyKafanov/st…</a></p>&mdash; Lucy Kafanov (@LucyKafanov) <a href="https://twitter.com/LucyKafanov/status/262760871397310464" data-datetime="2012-10-29T03:40:48+00:00">October 29, 2012</a></blockquote>
+            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <blockquote class="twitter-tweet"><p>We put a camera up on 51st floor of NYT building to watch storm <a href="http://t.co/cXm8icOX" title="http://nyti.ms/XHC9UL">nyti.ms/XHC9UL</a> (Crossing fingers keeps updating, tech gods willing)</p>&mdash; NYT Graphics (@nytgraphics) <a href="https://twitter.com/nytgraphics/status/262748256386306048" data-datetime="2012-10-29T02:50:40+00:00">October 29, 2012</a></blockquote>
+            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <blockquote class="twitter-tweet"><p>The Gowanus is beginning to flood on second street. It's about fifteen feet up the block now <a href="http://t.co/yCXnvaaw" title="http://twitter.com/hunterw/status/262719817235177473/photo/1">twitter.com/hunterw/status…</a></p>&mdash; Hunter Walker (@hunterw) <a href="https://twitter.com/hunterw/status/262719817235177473" data-datetime="2012-10-29T00:57:40+00:00">October 29, 2012</a></blockquote>
+            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <blockquote class="twitter-tweet"><p>Wow. All these MTA Photos of abandoned NYC transportation hubs are great. <a href="http://t.co/8fOcHO2h" title="http://www.flickr.com/photos/mtaphotos/">flickr.com/photos/mtaphot…</a></p>&mdash; Joseph Weisenthal (@TheStalwart) <a href="https://twitter.com/TheStalwart/status/262742220963196928" data-datetime="2012-10-29T02:26:41+00:00">October 29, 2012</a></blockquote>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
