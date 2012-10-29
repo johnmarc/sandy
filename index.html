@@ -4,69 +4,32 @@
         <title>
 Charts and Graphs for Sandy NYC
         </title>
-        <link rel='stylesheet' href='css/style.css'>
-        <style>
-    .tabs {
-      position: relative;   
-      min-height: 4000px; /* This part sucks */
-      clear: both;
-      margin: 20px 0;
-    }
-    .tab {
-      float: left;
-    }
-    .tab label {
-      background: #eee; 
-      padding: 10px; 
-      border: 1px solid #ccc; 
-      margin-left: -1px; 
-      position: relative;
-      left: 1px; 
-    }
-    .tab [type=radio] {
-      display: none;   
-    }
-    .content {
-      position: absolute;
-      top: 28px;
-      left: 0;
-      background: white;
-      right: 0;
-      bottom: 0;
-      padding: 20px;
-      border: 1px solid #ccc; 
-    }
-    [type=radio]:checked ~ label {
-      background: white;
-      border-bottom: 1px solid white;
-      z-index: 2;
-    }
-    [type=radio]:checked ~ label ~ .content {
-      z-index: 1;
-    }
-    ul {
-        list-style: none;
-        margin: 1em 0;
-        padding: 0; 
-    }
-    ul li {
-        font-weight: bold;
-        margin: 0;
-        padding: 3px 10px 5px 20px;
-        border-bottom: 1px solid #ccc;
-        color: #666; 
-    }
-    ul li:hover {
-        color: #000;
-        background-color: #ddd; 
-    }
-    </style>
+         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-<div id="page-wrap">
-<div class="tabs">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Charts and Graphs for Sandy NYC</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Current Conditions</a></li>
+              <li><a href="#links">Links</a></li>
+              <li><a href="#tweets">Tweets</a></li>
+              <li><a href="#images">Images</a></li>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+<div class="container">
     <div class="tab">
-        <input type="radio" id="tab-1" name="tab-group-1" checked>
         <label for="tab-1">Current Conditions</label>
         <div class="content">
         <address>
@@ -98,9 +61,7 @@ Update Time:
     </div>
 
 
-    <div class="tab">
-        <input type="radio" id="tab-2" name="tab-group-1">
-        <label for="tab-2">Links</label>
+        <label for="tab-2" id="links">Links</label>
         <div class="content">
             <h3> Links </h3>
             <ul>
@@ -121,54 +82,36 @@ Update Time:
             <li><a href="http://motherboard.vice.com/2012/10/29/jogging-yoga-and-a-toxic-river-park-slope-prepares-for-sandy--4">Pictures of Brooklyn and Lower Manhattan from Vice's Mother Board blog</a></li>
             </ul>
         </div>
-    </div>
 
-    <div class="tab">
-        <input type="radio" id="tab-3" name="tab-group-1">
-        <label for="tab-3">Tweets</label>
+        <h3 id="tweets">Tweets</h3>
         <div class="content">
             <h3> Twitter Updates </h3>
             <blockquote class="twitter-tweet"><p>Verrazano, George Washigton, Henry Hudson &amp; Throgs Neck closing 7 pm tonight.</p>&mdash; Sally Goldenberg (@SallyGold) <a href="https://twitter.com/SallyGold/status/263009847107264513" data-datetime="2012-10-29T20:10:08+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>Waves from Hurricane Sandy as seen from 15th Street in Brooklyn, looking toward the Verrazano Bridge. <a href="http://t.co/yfTtXY6Y" title="http://twitter.com/davesurber/status/263008019573530624/photo/1">twitter.com/davesurber/sta…</a></p>&mdash; Dave Surber (@davesurber) <a href="https://twitter.com/davesurber/status/263008019573530624" data-datetime="2012-10-29T20:02:53+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>Twitter stream moving fast. I forget who RT'd this but, here you go. (Re: crane.) <a href="https://t.co/UVBUPyzD" title="https://twitter.com/cmwdotme/status/262999259257909249/photo/1">twitter.com/cmwdotme/statu…</a></p>&mdash; Anna Holmes (@AnnaHolmes) <a href="https://twitter.com/AnnaHolmes/status/263002566776987648" data-datetime="2012-10-29T19:41:12+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>A crane on top of a building on W 57th street is breaking… please stay safe folks. <a href="https://twitter.com/search/%23Sandy">#Sandy</a> <a href="http://t.co/Sql7540y" title="http://twitter.com/PiersTonight/status/262985673978548224/photo/1">twitter.com/PiersTonight/s…</a></p>&mdash; Piers Morgan Tonight (@PiersTonight) <a href="https://twitter.com/PiersTonight/status/262985673978548224" data-datetime="2012-10-29T18:34:06+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>Photo: FDR Drive is under water. <a href="https://twitter.com/search/%23Sandy">#Sandy</a> still has not arrived, BTW. <a href="http://t.co/pZAJ2XL0" title="http://twitpic.com/b8io4t">twitpic.com/b8io4t</a></p>&mdash; Lisa Goldman (@lisang) <a href="https://twitter.com/lisang/status/262979872228528128" data-datetime="2012-10-29T18:11:02+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p><a href="https://twitter.com/search/%23Gowanus">#Gowanus</a> ten minutes ago. Yikes. <a href="http://t.co/RP2pUwlE" title="http://twitter.com/FCBonanno/status/262947494214893569/photo/1">twitter.com/FCBonanno/stat…</a></p>&mdash; Jonathan Bonanno (@FCBonanno) <a href="https://twitter.com/FCBonanno/status/262947494214893569" data-datetime="2012-10-29T16:02:23+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             <blockquote class="twitter-tweet"><p>Breathtaking view of Sandy from space, via @<a href="https://twitter.com/crampell">crampell</a> <a href="http://t.co/RO4d9dIl" title="http://twitpic.com/b8hvy5">twitpic.com/b8hvy5</a></p>&mdash; Nicholas Kristof (@NickKristof) <a href="https://twitter.com/NickKristof/status/262932599700332544" data-datetime="2012-10-29T15:03:11+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/startingptcnn">startingptcnn</a> Thank you for your amazing coverage Soledad! Here we are marooned in Red Hook, Brooklyn!! <a href="https://twitter.com/search/%23Sandy">#Sandy</a> <a href="http://t.co/VAHFiLXX" title="http://twitter.com/greenpainting/status/262894932648402944/photo/1">twitter.com/greenpainting/…</a></p>&mdash; Nick Cope (@greenpainting) <a href="https://twitter.com/greenpainting/status/262894932648402944" data-datetime="2012-10-29T12:33:31+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>this graphic really conveys a sense of alarm. kudos. <a href="http://t.co/yUHBnqEe" title="http://twitter.com/jezebeldodai/status/262761087684993025/photo/1">twitter.com/jezebeldodai/s…</a></p>&mdash; jezebel dodai (@jezebeldodai) <a href="https://twitter.com/jezebeldodai/status/262761087684993025" data-datetime="2012-10-29T03:41:40+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>Lower Manhattan during Hurricane Donna in 1960. <a href="https://twitter.com/search/%23sandy">#sandy</a> <a href="https://twitter.com/search/%23frankenstorm">#frankenstorm</a> <a href="http://t.co/8cePUV4W" title="http://twitter.com/LucyKafanov/status/262760871397310464/photo/1">twitter.com/LucyKafanov/st…</a></p>&mdash; Lucy Kafanov (@LucyKafanov) <a href="https://twitter.com/LucyKafanov/status/262760871397310464" data-datetime="2012-10-29T03:40:48+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>We put a camera up on 51st floor of NYT building to watch storm <a href="http://t.co/cXm8icOX" title="http://nyti.ms/XHC9UL">nyti.ms/XHC9UL</a> (Crossing fingers keeps updating, tech gods willing)</p>&mdash; NYT Graphics (@nytgraphics) <a href="https://twitter.com/nytgraphics/status/262748256386306048" data-datetime="2012-10-29T02:50:40+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>The Gowanus is beginning to flood on second street. It's about fifteen feet up the block now <a href="http://t.co/yCXnvaaw" title="http://twitter.com/hunterw/status/262719817235177473/photo/1">twitter.com/hunterw/status…</a></p>&mdash; Hunter Walker (@hunterw) <a href="https://twitter.com/hunterw/status/262719817235177473" data-datetime="2012-10-29T00:57:40+00:00">October 29, 2012</a></blockquote>
-            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             <blockquote class="twitter-tweet"><p>Wow. All these MTA Photos of abandoned NYC transportation hubs are great. <a href="http://t.co/8fOcHO2h" title="http://www.flickr.com/photos/mtaphotos/">flickr.com/photos/mtaphot…</a></p>&mdash; Joseph Weisenthal (@TheStalwart) <a href="https://twitter.com/TheStalwart/status/262742220963196928" data-datetime="2012-10-29T02:26:41+00:00">October 29, 2012</a></blockquote>
             </div>
-        </div>
-        <div class="tab">
-        <input type="radio" id="tab-4" name="tab-group-1">
-        <label for="tab-4">Streams</label>
+        <h3 id="streams">Streams</h3>
         <div class="content">
         <a href="http://www.nytimes.com/interactive/2012/10/28/nyregion/nyt-webcam.html">
             <img src="http://graphics8.nytimes.com/packages/images/1min/hurricanes/sandy/cam1/latest.jpg">
@@ -184,16 +127,15 @@ Update Time:
         <li><a href="http://www.earthcam.com/usa/newyork/skyline/">http://www.earthcam.com/usa/newyork/skyline/</a></li>
         </ul>
         </div>
-        </div>
-        <div class="tab">
-        <input type="radio" id="tab-5" name="tab-group-1">
-        <label for="tab-5">Images</label>
+        <h3 id="images">Images</h3>
         <div class="content">
-        <center>
-        <img src="http://i.imgur.com/11L9g.gif"><br />
+        <img src="http://i.imgur.com/11L9g.gif"/>
         </div>
         </div>
     </div>
 </div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
