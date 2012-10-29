@@ -6,6 +6,10 @@ body {
     background: #999;  
 }
 #page-wrap {
-  width: 960px; 
-  margin: 100px auto;
+  width: 1024px; 
+  margin: 50px auto;
+}
+a img {
+    text-decoration: none;
+    border: 0 none;
 }

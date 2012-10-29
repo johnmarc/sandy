@@ -10,7 +10,7 @@ Charts and Graphs for Sandy NYC
       position: relative;   
       min-height: 4000px; /* This part sucks */
       clear: both;
-      margin: 25px 0;
+      margin: 20px 0;
     }
     .tab {
       float: left;
@@ -43,6 +43,22 @@ Charts and Graphs for Sandy NYC
     }
     [type=radio]:checked ~ label ~ .content {
       z-index: 1;
+    }
+    ul {
+        list-style: none;
+        margin: 1em 0;
+        padding: 0; 
+    }
+    ul li {
+        font-weight: bold;
+        margin: 0;
+        padding: 3px 10px 5px 20px;
+        border-bottom: 1px solid #ccc;
+        color: #666; 
+    }
+    ul li:hover {
+        color: #000;
+        background-color: #ddd; 
     }
     </style>
     </head>
@@ -95,6 +111,10 @@ Update Time:
             <li><a href="http://hint.fm/wind/">Beautiful Wind Map from hint.fm</a> note the whole east coast being sucked toward sandy</a></li>
             <li><a href="http://www.ssd.noaa.gov/goes/east/eaus/flash-wv.html">NOAA Satellite Loop</a></li>
             <li><a href="http://gis.nyc.gov/oem/he/map.htm?lon=-73.99499584343718&lat=40.678699545556704">NYC Evacuation Zone Map</a></li>
+            <li><a href="http://www.wunderground.com/blog/JeffMasters/article.html">Jeff Masters blog on Weather Underground</a></li>
+            <li><a href="http://evgrieve.com/2012/10/here-comes-east-river.html#.UI6YH7od638.twitter">Here comes the East River - from EV GRIEVE</a></li>
+            <li><a href="http://www.erh.noaa.gov/">National Weather Service - Eastern Region Headquarters</a></li>
+            <li><a href="http://www.theatlantic.com/technology/archive/2012/10/why-sandy-has-meteorologists-scared-in-4-images/264198/">Why Sandy Has Meteorologists Scared in 4 Images</a></li>
             </ul>
         </div>
     </div>
@@ -104,6 +124,9 @@ Update Time:
         <label for="tab-3">Tweets</label>
         <div class="content">
             <h3> Twitter Updates </h3>
+            <blockquote class="twitter-tweet"><p>Breathtaking view of Sandy from space, via @<a href="https://twitter.com/crampell">crampell</a> <a href="http://t.co/RO4d9dIl" title="http://twitpic.com/b8hvy5">twitpic.com/b8hvy5</a></p>&mdash; Nicholas Kristof (@NickKristof) <a href="https://twitter.com/NickKristof/status/262932599700332544" data-datetime="2012-10-29T15:03:11+00:00">October 29, 2012</a></blockquote>
+            <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
             <blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/startingptcnn">startingptcnn</a> Thank you for your amazing coverage Soledad! Here we are marooned in Red Hook, Brooklyn!! <a href="https://twitter.com/search/%23Sandy">#Sandy</a> <a href="http://t.co/VAHFiLXX" title="http://twitter.com/greenpainting/status/262894932648402944/photo/1">twitter.com/greenpainting/…</a></p>&mdash; Nick Cope (@greenpainting) <a href="https://twitter.com/greenpainting/status/262894932648402944" data-datetime="2012-10-29T12:33:31+00:00">October 29, 2012</a></blockquote>
             <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -121,6 +144,25 @@ Update Time:
 
             <blockquote class="twitter-tweet"><p>Wow. All these MTA Photos of abandoned NYC transportation hubs are great. <a href="http://t.co/8fOcHO2h" title="http://www.flickr.com/photos/mtaphotos/">flickr.com/photos/mtaphot…</a></p>&mdash; Joseph Weisenthal (@TheStalwart) <a href="https://twitter.com/TheStalwart/status/262742220963196928" data-datetime="2012-10-29T02:26:41+00:00">October 29, 2012</a></blockquote>
             </div>
+        </div>
+        <div class="tab">
+        <input type="radio" id="tab-4" name="tab-group-1">
+        <label for="tab-4">Streams</label>
+        <div class="content">
+        <a href="http://www.nytimes.com/interactive/2012/10/28/nyregion/nyt-webcam.html">
+            <img src="http://graphics8.nytimes.com/packages/images/1min/hurricanes/sandy/cam1/latest.jpg">
+        </a><br />&nbsp;<br />
+
+
+        <iframe width="480" height="302" src="http://www.ustream.tv/embed/12423431?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
+        <br /><a href="http://www.ustream.tv/" style="padding: 2px 0px 4px; width: 400px; background: #ffffff; display: block; color: #000000; font-weight: normal; font-size: 10px; text-decoration: underline; text-align: center;" target="_blank">Live stream by Ustream</a>
+
+        <iframe width="480" height="302" src="http://www.ustream.tv/embed/12425101?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe><br /><a href="http://www.ustream.tv/" style="padding: 2px 0px 4px; width: 400px; background: #ffffff; display: block; color: #000000; font-weight: normal; font-size: 10px; text-decoration: underline; text-align: center;" target="_blank">Streaming by Ustream</a>
+
+        <ul>
+        <li><a href="http://www.earthcam.com/usa/newyork/skyline/">http://www.earthcam.com/usa/newyork/skyline/</a></li>
+        </ul>
+        </div>
         </div>
     </div>
 </div>
